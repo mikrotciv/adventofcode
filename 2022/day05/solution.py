@@ -60,7 +60,7 @@ def get_CraterMover9000_results(table_: InputTable, instructions_: Instructions)
     return "".join([copy_table[idx+1][0] for idx in range(len(copy_table)) if copy_table[idx+1]])    
 
 def get_CraterMover9001_results(table_: InputTable, instructions_: Instructions) -> str:
-    """Part 2: CraterMover9001 moves stack one block at a time"""
+    """Part 2: CraterMover9001 moves stack as a whole"""
     copy_table = deepcopy(table_)
     for instruction in instructions_:
         source = copy_table[instruction.source]
